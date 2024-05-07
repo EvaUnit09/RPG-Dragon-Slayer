@@ -256,6 +256,10 @@ function restart() {
 function easterEgg() {
   update(locations[7]);
   easterEggFound = true;
+  // Set event listeners for Easter egg buttons
+  button1.onclick = function() { pick(2); }; // Assigning pickTwo to button1
+  button2.onclick = function() { pick(8); }; // Assigning pickEight to button2
+  button3.onclick = goTown; // Assigning goTown to button3
 }
 
 function pickTwo() {
