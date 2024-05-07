@@ -1,5 +1,6 @@
 body {
   background-color: #0a0a23;
+  font-size: x-large;
 }
 
 #text {
@@ -15,6 +16,7 @@ body {
   color: #ffffff;
   margin: 30px auto 0px;
   padding: 10px;
+  text-align: center;
 }
 
 #controls,
@@ -42,4 +44,7 @@ button {
   background-color: #feac32;
   background-image: linear-gradient(#fecc4c, #ffac33);
   border: 3px solid #feac32;
+}
+#photo {
+  margin: 0 auto;
 }
