@@ -5,6 +5,7 @@ let currentWeapon = 0;
 let fighting;
 let monsterHealth;
 let inventory = ["stick"];
+let easterEggFound = false;
 
 const button1 = document.querySelector('#button1');
 const button2 = document.querySelector("#button2");
@@ -254,14 +255,19 @@ function restart() {
 
 function easterEgg() {
   update(locations[7]);
+  easterEggFound = true;
 }
 
 function pickTwo() {
+ if (!easterEggFound) {
   pick(2);
+ } 
 }
 
 function pickEight() {
-  pick(8);
+  if (!easterEggFound) {
+  pick(8);  
+  }
 }
 
 function pick(guess) {
